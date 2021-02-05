@@ -1,0 +1,12 @@
+.chat {
+  height: 630px;
+  display: flex;
+  border: 2px solid #eeedec;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .chat {
+    flex-direction: column;
+  }
+}

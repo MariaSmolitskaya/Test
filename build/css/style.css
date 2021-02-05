@@ -1,0 +1,205 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "TT Norms", "Arial", sans-serif; }
+
+.chat-main__wrapper {
+  width: 85%;
+  max-width: 1100px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.chat {
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #eeedec;
+  border-radius: 5px; }
+
+.friends {
+  width: 25%;
+  background-color: #ffffff;
+  border-right: 2px solid #eeedec; }
+
+.friends__title {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 21px;
+  font-weight: bold;
+  border-bottom: 1px solid #eeedec; }
+
+.friends__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.friends__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #eeedec;
+  cursor: pointer; }
+
+.friends__item--active {
+  background-color: #F3F5F9; }
+
+.friends__item p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.friends__item img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px; }
+
+.chat-header {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.chat-header__btn-exit {
+  color: #0E61FA;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer; }
+  .chat-header__btn-exit:hover {
+    opacity: 0.7; }
+
+.messages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F4F4F5; }
+
+.messages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.messages__item {
+  margin-top: 15px; }
+
+.messages__item--sent {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px; }
+
+.messages__item--sent p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 20px 0 0;
+  padding: 5px 8px;
+  line-height: 35px;
+  color: #ffffff;
+  background-color: #0E61FA;
+  border-radius: 10px;
+  position: relative; }
+  .messages__item--sent p::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    right: -14px;
+    top: 10px;
+    -webkit-transform: scaleY(0.5) rotate(45deg);
+            transform: scaleY(0.5) rotate(45deg);
+    background-color: #0E61FA;
+    -webkit-box-shadow: 5px -5px 10px #C0C0C0;
+            box-shadow: 5px -5px 10px #C0C0C0;
+    z-index: -1500; }
+
+.messages__item svg {
+  width: 43px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
+
+.messages__text {
+  min-height: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff; }
+
+.messages__textarea {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border: none;
+  resize: none; }
+  .messages__textarea::-webkit-input-placeholder {
+    font-family: "TT Norms", "Arial", sans-serif; }
+  .messages__textarea::-moz-placeholder {
+    font-family: "TT Norms", "Arial", sans-serif; }
+  .messages__textarea:-ms-input-placeholder {
+    font-family: "TT Norms", "Arial", sans-serif; }
+  .messages__textarea::-ms-input-placeholder {
+    font-family: "TT Norms", "Arial", sans-serif; }
+  .messages__textarea::placeholder {
+    font-family: "TT Norms", "Arial", sans-serif; }
+
+.messages__send-btn {
+  width: 70px;
+  padding: 0 20px;
+  border: none;
+  background-color: transparent;
+  border-left: 1px solid #eeedec;
+  cursor: pointer; }
+  .messages__send-btn:hover {
+    opacity: 0.7; }
+
+.messages__send-btn svg {
+  width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=style.css.map */

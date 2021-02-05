@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Changellenge chat</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+</div>
+<main class="chat-main">
+    <div class="chat-main__wrapper">
+        <div class="chat-header">
+            <p class="chat-header__active-chat">Иван</p>
+            <label class="chat-header__switch">
+                <input class="chat-header__switch-input" type="checkbox">
+                <span class="chat-header__switch-round"></span>
+            </label>
+            <p class="chat-header__user">Иван Иванов</p>
+            <button class="chat-header__btn-exit">Выход</button>
+        </div>
+        <div class="chat">
+            <div class="chat__friends friends">
+                <p class="friends__title">Список друзей:</p>
+                <ul class="friends__list">
+                    <li class="friends__item">
+                        <img src="img/photo1.jpg" width="50" height="50">
+                        <p>Иван Иванов</p>
+                    </li>
+                    <li class="friends__item friends__item--active">
+                        <div class="friends__img">
+                            <img src="img/photo2.jpg" width="50" height="50">
+                        </div>
+                        <p>Иван (Saved Messages)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat__messages messages">
+                <ul class="messages__list">
+                    <li class="messages__item messages__item--sent">
+                        <p>Привет</p>
+                        <svg viewBox="0 0 512 512" width="43" height="43"><use xlink:href="img/sprite_auto.svg#icon-user"></use></svg>
+                    </li>
+                    <li class="messages__item messages__item--sent">
+                        <p>Сохраняю свои сообщения</p>
+                        <svg viewBox="0 0 512 512" width="43" height="43"><use xlink:href="img/sprite_auto.svg#icon-user"></use></svg>
+                    </li>
+                </ul>
+                <form class="messages__form">
+                    <textarea class="messages__text" placeholder="Введите ваше сообщение"></textarea>
+                    <button class="messages__send-btn" type="submit">
+                        <svg viewBox="0 0 24 24" width="512" height="512"><svg viewBox="0 0 512 512"><use xlink:href="img/sprite_auto.svg#icon-plane"></use></svg></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
